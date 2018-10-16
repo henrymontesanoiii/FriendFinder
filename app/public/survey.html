@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12">
+        
+        
+        <!-- survey -->
+        <div class="card">
+          <div class="card-header">
+            <h1><strong>Survey Questions</strong></h1>
+            <h4><strong>Answer the questions on a scale of 1 (Strongly Disagree) to 5 (Strongly Agree)</strong></h4>
+          </div>
+          <div class="card-body">
+            <form method="POST" phone="form">
+              <h3><strong>About You</strong></h3>
+              <div class="form-group">
+                <label for="name">Name(Required)</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+
+              <div class="form-group">
+                <label for="photo">Link to Photo(Required)</label>
+                <input type="url" class="form-control" id="url">
+              </div>
+              <hr>
+              <h3><strong>Question 1</strong></h3>
+              <div class="form-group">
+                <label for="question1">You feel more energized in the morning rather than the evening.</label>
+                <select class="form-control" id="question1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </form>
+            <hr>
+            <h3><strong>Question 2</strong></h3>
+            <div class="form-group">
+              <label for="question2">You'd rather run through life accomplishing as much as you can over slowing down
+                and savoring each moment.</label>
+              <select class="form-control" id="question2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            </form>
+            <hr>
+            <h3><strong>Question 3</strong></h3>
+            <div class="form-group">
+              <label for="question3">You'd rather be leading the conversation rather than recieving it.</label>
+              <select class="form-control" id="question3">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            </form>
+            <hr>
+            <h3><strong>Question 4</strong></h3>
+            <div class="form-group">
+              <label for="question4">You like trying new, exotic foods rather than eating something you've had already
+                that you enjoy.</label>
+              <select class="form-control" id="question4">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            </form>
+            <hr>
+            <h3><strong>Question 5</strong></h3>
+            <div class="form-group">
+              <label for="question5">You enjoy watching T.V. before bed over reading a book.</label>
+              <select class="form-control" id="question5">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            </form>
+            <hr>
+            <h3><strong>Question 6</strong></h3>
+            <div class="form-group">
+              <label for="question6">You'd rather participate in outdoor events than indoor.</label>
+              <select class="form-control" id="question6">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            </form>
+            <hr>
+            <h3><strong>Question 7</strong></h3>
+            <div class="form-group">
+              <label for="question7">You prefer to feel cool rather than warm.</label>
+              <select class="form-control" id="question7">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            </form>
+            <hr>
+            <h3><strong>Question 8</strong></h3>
+            <div class="form-group">
+              <label for="question8">You prefer to have a stable job over switching employers and positions every few
+                years.</label>
+              <select class="form-control" id="question8">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            </form>
+            <hr>
+            <h3><strong>Question 9</strong></h3>
+            <div class="form-group">
+              <label for="question9">You would rather vacation on a beach rather than explore a city.</label>
+              <select class="form-control" id="question9">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            </form>
+            <hr>
+            <h3><strong>Question 10</strong></h3>
+            <div class="form-group">
+              <label for="question10">You prefer Science Fiction & Fantasy movies over Dramas & Documentaries</label>
+              <select class="form-control" id="question10">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            </form>
+            <br>
+            <div class="text-right">
+              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-check"></span>
+                Submit</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $("#add-btn").on("click", function (event) {
+      event.preventDefault();
+      const newFriend = {
+        name: $("#name").val(),
+        photo: $("#url").val(),
+        scores: [
+          q1 = parseInt($("#question1").val()),
+          q2 = parseInt($("#question2").val()),
+          q3 = parseInt($("#question3").val()),
+          q4 = parseInt($("#question4").val()),
+          q5 = parseInt($("#question5").val()),
+          q6 = parseInt($("#question6").val()),
+          q7 = parseInt($("#question7").val()),
+          q8 = parseInt($("#question8").val()),
+          q9 = parseInt($("#question9").val()),
+          q10 = parseInt($("#question10").val())
+        ]
+      };
+      //first run get to compare to present friends data
+      $.get("/api/friends/", function (data) {
+
+        if (!newFriend.name) {
+          alert("PLEASE ENTER NAME!");
+          return false;
+        } else if (!newFriend.photo) {
+          alert("PLEASE PROVIDE URL LINK TO PROFILE PHOTO!");
+          return false;
+        } else {
+          console.log("Current Friends List:");
+          console.log(data);
+          let finalDifference = [];
+          //for each friend in api
+          for (var i = 0; i < data.length; i++) {
+            // logs absolute value of difference between each question score
+            let scoresArray = [];
+            //sum all scores together
+            let scoresSum = 0;
+
+            //begin listing all functions
+
+            //for each answer, push absolute value of number to scoresArray
+            function absScores() {
+              scoresArray.push(Math.abs(newFriend.scores[j] - data[i].scores[j]));
+            }
+
+            function addScores(item) {
+              for (var s = 0; s < scoresArray.length; s++) {
+                function getSum(total, num) {
+                  return total + num;
+                }
+                scoresSum = scoresArray.reduce(getSum);
+
+              }
+              finalDifference.push(scoresSum);
+            }
+
+            function erase() {
+              scoresArray = [];
+              scoresSum = 0;
+            }
+
+
+            function closest() {
+              let min = Math.min(...finalDifference)
+              console.log("Lowest number: " + min)
+
+              for (var t = 0; t < data.length; t++) {
+                if (finalDifference.indexOf(min) === data.indexOf(data[t])) {
+                  alert("New Friend: " + data[t].name);
+                  
+                }
+              }
+            }
+
+            function post() {
+              //then post new friend data to api
+              $.post("/api/friends", newFriend)
+                .then(function (data) {
+                  console.log("New Friend added!");
+                  console.log(data);
+                });
+            }
+
+            function clearForm() {
+              $("#name").val("");
+              $("#url").val("");
+              $("#question1").val("1");
+              $("#question2").val("1");
+              $("#question3").val("1");
+              $("#question4").val("1");
+              $("#question5").val("1");
+              $("#question6").val("1");
+              $("#question7").val("1");
+              $("#question8").val("1");
+              $("#question9").val("1");
+              $("#question10").val("1");
+            }
+
+            //begin running functions
+            for (var j = 0; j < 10; j++) {
+              absScores();
+            }
+            console.log("Scores Differences Array: " + scoresArray);
+            //for each number in scoresArray, add together
+
+            //push scores sum to finalDifference array
+            addScores();
+            //erase arrays 
+            erase();
+          }
+          console.log("Final Difference Totals: " + finalDifference);
+          closest();
+          post();
+          // clear form data
+          clearForm();
+        }
+      })
+
+
+    });
+  </script>
+
+</body>
+
+</html>
